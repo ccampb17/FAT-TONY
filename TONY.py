@@ -76,10 +76,10 @@ class TonyApp:
         self.display_welcome()
         self.display_fed_feed()
 
-text_input = [
-    # ... add more lines as needed
-]
-
-root = tk.Tk()
-app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
-root.mainloop()
+# text_input = [
+#     # ... add more lines as needed
+# ]
+#
+# root = tk.Tk()
+# app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
+# root.mainloop()

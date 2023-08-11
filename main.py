@@ -4,13 +4,20 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from TONY import *
+
+text_input = [
+    # ... add more lines as needed
+]
+
+
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    root = tk.Tk()
+    app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
+    root.mainloop()
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
