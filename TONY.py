@@ -43,7 +43,10 @@ class TonyApp:
         button_frame_2 = tk.Frame(self.root)
         button_frame_2.pack(side="bottom")
 
-        fed_button = tk.Button(button_frame_1, text="CAT WAS FED", command=self.fed)
+        fed_button = tk.Button(button_frame_1,
+                               text="CAT WAS FED",
+                               command=self.fed,
+                               font=("Arial", 32, "bold"))
         fed_button.pack(side="top")
 
         undo_button = tk.Button(button_frame_2, text="Undo", command=self.undo)
@@ -76,10 +79,10 @@ class TonyApp:
         self.display_welcome()
         self.display_fed_feed()
 
-# text_input = [
-#     # ... add more lines as needed
-# ]
-#
-# root = tk.Tk()
-# app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
-# root.mainloop()
+text_input = [
+    # ... add more lines as needed
+]
+
+root = tk.Tk()
+app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
+root.mainloop()
