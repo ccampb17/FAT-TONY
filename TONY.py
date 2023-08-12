@@ -4,6 +4,7 @@ import tkinter as tk
 class TonyApp:
     def __init__(self, root, feed_data, welcome_msg):
         self.root = root
+        self.root.attributes("-fullscreen", True)
         self.root.title("TONY")
 
         self.feed_data = feed_data
@@ -62,12 +63,16 @@ class TonyApp:
 
         undo_button = tk.Button(button_frame_2, 
                                 text="Undo", 
-                                command=self.undo)
+                                command=self.undo,
+                                padx=30,
+                                pady=20)
         undo_button.pack(side="left")
 
         reset_button = tk.Button(button_frame_2, 
                                 text="Reset", 
-                                command=self.reset)
+                                command=self.reset,
+                                padx=30,
+                                pady=20)
         reset_button.pack(side="left")
 
     def fed(self):
