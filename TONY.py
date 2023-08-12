@@ -46,13 +46,17 @@ class TonyApp:
         fed_button = tk.Button(button_frame_1,
                                text="CAT WAS FED",
                                command=self.fed,
-                               font=("Arial", 32, "bold"))
+                               font=("Quicksand Medium", 52, "bold"))
         fed_button.pack(side="top")
 
-        undo_button = tk.Button(button_frame_2, text="Undo", command=self.undo)
+        undo_button = tk.Button(button_frame_2, 
+                                text="Undo", 
+                                command=self.undo)
         undo_button.pack(side="left")
 
-        reset_button = tk.Button(button_frame_2, text="Reset", command=self.reset)
+        reset_button = tk.Button(button_frame_2, 
+                                text="Reset", 
+                                command=self.reset)
         reset_button.pack(side="left")
 
     def fed(self):
