@@ -28,12 +28,22 @@ class TonyApp:
         self.create_buttons()
 
     def display_welcome(self):
-        text_label = tk.Label(self.frame, text=self.welcome_msg, justify="left", anchor="s", font=("Comic Sans MS", 14))
+        text_label = tk.Label(
+                                self.frame, 
+                                text=self.welcome_msg, 
+                                justify="left", 
+                                anchor="n", 
+                                font=("Comic Sans MS", 32))
         text_label.pack()
 
     def display_fed_feed(self):
         text = "\n".join(self.feed_data)
-        text_label = tk.Label(self.frame, text=text, justify="left", anchor="s", font=("Comic Sans MS", 14))
+        text_label = tk.Label(
+                                self.frame, 
+                                text=text, 
+                                justify="left", 
+                                anchor="s", 
+                                font=("Quicksand Medium", 16))#"Comic Sans MS", 14))
         text_label.pack()
 
     def create_buttons(self):
@@ -44,9 +54,10 @@ class TonyApp:
         button_frame_2.pack(side="bottom")
 
         fed_button = tk.Button(button_frame_1,
-                               text="CAT WAS FED",
+                               text="CAT\nWAS\nFED",
                                command=self.fed,
-                               font=("Quicksand Medium", 52, "bold"))
+                               font=("Quicksand Medium", 52, "bold"),
+                               padx=75)
         fed_button.pack(side="top")
 
         undo_button = tk.Button(button_frame_2, 
@@ -83,10 +94,10 @@ class TonyApp:
         self.display_welcome()
         self.display_fed_feed()
 
-text_input = [
-    # ... add more lines as needed
-]
+# text_input = [
+    # # ... add more lines as needed
+# ]
 
-root = tk.Tk()
-app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
-root.mainloop()
+# root = tk.Tk()
+# app = TonyApp(root, text_input, welcome_msg='WELCOME TO TONY APP')
+# root.mainloop()
